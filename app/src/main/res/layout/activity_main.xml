@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/valorTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/et_label_temp"
+        android:inputType="numberDecimal"
+        android:backgroundTint="@color/blue"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/celsiusRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rd_label_celsius"
+            android:checked="false"/>
+
+        <RadioButton
+            android:id="@+id/fahrenheitRadio"
+            android:layout_width="365dp"
+            android:layout_height="62dp"
+            android:checked="true"
+            android:text="@string/rd_label_fahrenheit" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/converterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:text="@string/btn_label_converter"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/yellow" />
+
+</LinearLayout>
+
+
